@@ -1,5 +1,7 @@
 package shit;
 
+import java.util.ArrayList;
+
 public class Strings {
     public static void main(String[] args) {  // this String[] args shit is called command line arguments
         // all string objects are stored in string pool inside of heap
@@ -13,5 +15,11 @@ public class Strings {
         // to create a new string object use new keyword
 
         String a = new String("Ash");
+
+        // string concatenation
+        System.out.println("Ayush" + "Bansal");
+        System.out.println("a" + new ArrayList<>());  // this will convert the arraylist to string too
+        System.out.println(new ArrayList<>() + "" + new ArrayList<>());   // + operator can only be applied on primitives
+        // or either of the values is a string
     }
 }
